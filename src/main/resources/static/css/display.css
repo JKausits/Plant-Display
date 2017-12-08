@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.border {
+    background-color: #000034;
+    z-index: 1;
+}
+
+#top {
+    height: 17vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+#bottom {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+}
+
+#left {
+    width: 5vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+#right {
+    width: 5vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+#logo {
+    z-index: 2;
+    position: absolute;
+    left: 5vw;
+    top: 1vh;
+    height: 16vh;
+}
+
+#date {
+    z-index: 2;
+    position: absolute;
+    left: 14vw;
+    top: 1vh;
+    font-size: 10vh;
+}
+
+#time {
+    z-index: 2;
+    position: absolute;
+    font-size: 10vh;
+    top: 1vh;
+    right: 5vw;
+}
+
+#ticker {
+    position: absolute;
+    left: 6vw;
+    width: 88vw;
+    font-size: 13vh;
+    color: black;
+    background-color: white;
+
+}
+
+@keyframes scroll {
+    from{top: 100vh;}
+    to {top: -100vh;}
+}

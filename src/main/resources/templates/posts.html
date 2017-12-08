@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="template :: header">
+    </head>
+    <nav th:replace="template :: navbar"></nav>
+    <body class="col-md-10 col-md-offset-1 container" style="color: black; margin-top: 70px;">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Posts</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-striped" id="posts">
+                    <tbody>
+                        <th:block th:each="post : ${posts}">
+                            <tr>
+                                <td th:utext="${post.content}" class="col-md-8"></td>
+                                <td>
+                                    <button style="min-width: 8vw;"
+                                            class="btn toggle-deactivate-button"
+                                            th:classappend="${post.active} ? btn-success : btn-danger"
+                                            th:text="${post.active} ? 'Deactivate' : 'Activate'">Deactivate</button>
+                                    <button style="min-width: 8vw; margin-left: 1vw;" class="btn btn-danger delete-button">Delete</button>
+                                </td>
+                                <td style="display: none;" class="id" th:text="${post.id}"></td>
+                            </tr>
+                        </th:block>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script th:src="@{/js/posts.js}"></script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template :: head">
+</head>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet"/>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<nav th:replace="template :: navbar"></nav>
+<body class="container">
+    <img th:src="@{/img/cgc.JPG}" alt=""/>
+    <div id="editor"></div>
+    <button class="btn btn-success" id="submitBtn" style="min-width: 10vw;  ">Submit</button>
+</body>
+<script th:src="@{/js/postForm.js}"></script>
+</html>

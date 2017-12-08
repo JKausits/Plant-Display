@@ -1,0 +1,17 @@
+body{
+    margin-top: 80px;
+    color: white;
+}
+
+.container {
+    background-color: #000034;
+}
+
+.navbar-default .container{
+    background-color: #f8f8f8;
+}
+
+#editor{
+    background-color: white;
+    color: black;
+}

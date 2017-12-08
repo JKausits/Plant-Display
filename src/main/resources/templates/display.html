@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template :: header">
+</head>
+<link rel="stylesheet" th:href="@{/css/display.css}"/>
+<body>
+    <a href="/post/new"><img th:src="@{/img/cgc.JPG}" alt="" class="image-responsive" id="logo"/></a>
+    <div class="border" id="top"></div>
+    <p id="date"></p>
+    <p id="time"></p>
+    <p id="ticker"></p>
+    <div class="border" id="bottom"></div>
+    <div class="border" id="left"></div>
+    <div class="border" id="right"></div>
+
+</body>
+<script th:src="@{/js/display.js}">
+
+</script>
+</html>
